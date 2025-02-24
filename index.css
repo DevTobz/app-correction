@@ -1,0 +1,193 @@
+:root {
+    --Background: #FFFFFF;
+    --Title-and-Body-Text: #1F201D;
+    --Headline-Title: #3C3B6E;
+    --Containers: #F4F4F4;
+    --SvgBtnFill: #1F201D;
+    --SvgIconFill: #3C3B6E;
+    --NextBtn: #3C3B6E;
+    --PassEye: #1F201D;
+    --FlagBorder: #ffffff;
+    --onBoardSmall:#545553
+  }
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+p {
+    margin-bottom: 0 !important;
+}
+
+  body {
+    background-color: var(--Background);
+    color: var(--Title-and-Body-Text);
+    height: 100vh;
+    overflow-x: hidden;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 3.5rem;
+    padding-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+  }
+    .text-he {
+  color: var(--Headline-Title);
+  font-family: "Cera Pro Bold";
+  }
+
+  .bg-page {
+  background-color: red;
+  }
+
+  .bg-choose {
+  background-color: var(--Containers);
+  }
+
+  .w-60 {
+  width: 60% !important;
+  }
+
+  @media (max-width: 630px) {
+    .w-60 {
+        width: 95% !important;
+    }
+}
+.heading-custom-text { 
+    font-size: 17px; 
+    color: var(--Title-and-Body-Text);
+    line-height: 25px;
+    font-family: "Cera Pro Medium";
+}
+
+  .back-btn{
+    width: 41px;  
+    height: 41px;
+    padding: 0;
+    
+  }
+
+  .second-txt{
+    color: var(--onBoardSmall);
+    font-size: 14px;
+    font-family: "Cera Pro Thin";
+  }
+
+  .second-screen-txt{
+    color: var(--onBoardSmall);
+    font-size: 16px;
+    font-family: "Cera Pro Thin";
+  }
+
+  .back-icon{
+    background-image: url('/icon/arrow-arrow-right.png'); 
+    background-size: contain; 
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 20px;
+    width:20px;
+  }
+
+  .individual-acct-icon{
+    min-width: 66px;
+    min-height: 66px;
+    background-image: url('/icon/user.png'); 
+    background-size: contain; 
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .business-acct-icon{
+    min-width: 66px;
+    min-height: 66px;
+    background-image: url('/icon/briefcase.png'); 
+    background-size: contain; 
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .country-flag{
+    height: 61px;
+    width: 62px;
+   
+  }
+
+  .cus-input{
+    height: 61px;
+    width: 100%;
+    font-family: "Cera Pro Thin";
+
+  }
+
+  .next-btn{
+    height: 62px;
+  }
+.bg-next-btn{
+    background-color: var(--NextBtn);
+}
+
+.flag{
+    height: 37px;
+    width: 37px;
+    background-image: url("/icon/Vector.png");
+    background-size: contain; 
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 5px solid white;
+    
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeInAnimation 0.8s ease-in-out forwards;
+}
+.fade-out {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+@keyframes fadeInAnimation {
+    from {
+        opacity: 0;
+
+    }
+    to {
+        opacity: 1;
+        
+    }
+}
+
+
+
+
+  @font-face {
+    font-family: 'Cera Pro Bold';
+    src: url('/font/cerapro-bold.otf') format('opentype');
+  }
+
+  @font-face {
+    font-family: 'Cera Pro';
+    src: url('/font/cerapro-regular.otf') format('opentype');
+  }
+
+  @font-face {
+    font-family: 'Cera Pro Medium';
+    src: url('/font/cerapro-medium.otf') format('opentype');
+  }
+
+  @font-face {
+    font-family: 'Cera Pro Light';
+    src: url('/font/cerapro-light.otf') format('opentype');
+  }
+  
+  @font-face {
+    font-family: 'Cera Pro Thin';
+    src: url('/font/cerapro-thin.otf') format('opentype');
+  }
+  
